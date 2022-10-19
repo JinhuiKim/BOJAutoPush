@@ -1,5 +1,1 @@
-function solution(s1, s2) {
-  let answer = 0;
-  for (const ele of s1) s2.includes(ele) && answer++;
-  return answer;
-}
+const solution = (s1, s2) => s1.filter((v) => s2.includes(v)).length;
